@@ -1,0 +1,91 @@
+:root {
+  --main-light-background: lightblue;
+  --secondary-light-background: rgb(109, 109, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-light-background);
+}
+
+.search-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(109, 109, 255);
+  border-radius: 1rem;
+}
+
+.search-label {
+  font-size: 2rem;
+  margin: 1rem 2rem;
+}
+
+.search-input {
+  font-size: 2rem;
+}
+
+.search-button {
+  font-size: 2rem;
+  margin: 1rem 2rem;
+}
+
+.navbar {
+  background-color: var(--secondary-light-background);
+}
+
+.logo {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.student-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+  font-weight: 700;
+}
+
+.header-item {
+  display: inline-block;
+}
+
+.courses{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+table, th, td{
+  border:0.1rem solid black;
+  padding: 0.25rem;
+  text-align: center;
+}
+table{
+  margin-bottom:4rem;
+}
