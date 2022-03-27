@@ -16,9 +16,10 @@ body {
 
 .search-page {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  margin-top: 4rem;
 }
 
 .search-form {
@@ -42,6 +43,11 @@ body {
 .search-button {
   font-size: 2rem;
   margin: 1rem 2rem;
+}
+
+.search-select {
+  font-size: 2rem;
+  margin-left: 1rem;
 }
 
 .navbar {
@@ -74,18 +80,95 @@ body {
   display: inline-block;
 }
 
-.courses{
+.courses {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-table, th, td{
-  border:0.1rem solid black;
+table,
+th,
+td {
+  border: 0.1rem solid black;
   padding: 0.25rem;
   text-align: center;
 }
-table{
-  margin-bottom:4rem;
+td {
+  padding: 0.5rem 1rem;
+}
+table {
+  margin-bottom: 4rem;
+}
+
+.school-name {
+  list-style: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border: 0.25rem solid black;
+  border-radius: 1rem;
+  font-weight: 600;
+  transition: all 0.25s;
+}
+.school-name:hover {
+  background-color: white;
+  transition: all 0.25s;
+}
+
+.school-list {
+  padding: 0;
+  margin: 0;
+}
+
+.school-page {
+  margin-left: 4rem;
+}
+
+.homeroom-li {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0.25rem 4rem;
+  padding: 0.25rem 1rem;
+  list-style: none;
+  border-bottom: 0.25rem solid transparent;
+}
+.homeroom-li:hover {
+  border-bottom: 0.25rem solid black;
+  transition: all 0.25s;
+}
+
+.homeroom-page {
+  margin-left: 4rem;
+}
+
+.student-table-row,
+.student-table-cell,
+.student-table {
+  border: none;
+}
+
+.student-table {
+  padding: 0;
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  border-collapse: collapse;
+}
+
+.student-table-header {
+  border-bottom: 0.25rem solid black;
+}
+
+.student-table-row {
+  border-bottom: 0.25rem solid transparent;
+  cursor: pointer;
+}
+
+.student-table-row:hover {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 0.25rem solid black;
+  transition: all 0.25s;
 }
